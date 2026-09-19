@@ -4,4 +4,6 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./target/wallet-0.0.1-SNAPSHOT.war:/usr/local/tomcat/webapps/wallet.war
+      - ./src/main/webapp:/usr/local/tomcat/webapps/ROOT
+      - ./target/classes:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes
+      - ./target/wallet-0.0.1-SNAPSHOT/WEB-INF/lib:/usr/local/tomcat/webapps/ROOT/WEB-INF/lib
