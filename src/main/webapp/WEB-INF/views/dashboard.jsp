@@ -72,6 +72,45 @@
                             </form>
                         </div>
                     </div>
+
+                    <div class="flex flex-col rounded-md border border-slate-200 px-3 py-3 gap-y-3 bg-white">
+                        <div class="text-xs text-slate-900">
+                            Movimientos históricos
+                        </div>
+                        <div>
+                            <c:choose>
+                                <c:when test="${empty billetera.movimientos}">
+                                    <p class="text-xs text-slate-500">Aún no hay movimientos registrados.</p>
+                                </c:when>
+                                <c:otherwise>
+                                    <ul class="flex flex-col space-y-2">
+                                        <c:forEach items="${billetera.movimientos}" var="movimiento">
+                                            <li class="flex flex-row justify-between gap-x-1 items-center">
+                                                <div class="flex flex-col gap-x-1">
+                                                    <span
+                                                        class="${movimiento.recarga ? 'text-green-700' : 'text-rose-700'} text-sm font-semibold">
+                                                        ${movimiento.recarga ? 'RECARGA' : 'GASTO'}
+                                                    </span>
+
+                                                    <span class="text-xs text-slate-500">
+                                                        <fmt:formatDate value="${movimiento.fecha}"
+                                                            pattern="dd/MM/yyyy HH:mm" />
+                                                    </span>
+                                                </div>
+                                                <span
+                                                    class="${movimiento.recarga ? 'text-green-700' : 'text-rose-700'} text-sm font-bold">
+                                                    ${movimiento.recarga ? '+' : '-'}
+                                                    S/.
+                                                    <fmt:formatNumber value="${movimiento.monto}" pattern="#,##0.00" />
+                                                </span>
+                                            </li>
+                                        </c:forEach>
+                                    </ul>
+                                </c:otherwise>
+                            </c:choose>
+
+                        </div>
+                    </div>
                 </main>
             </body>
 
