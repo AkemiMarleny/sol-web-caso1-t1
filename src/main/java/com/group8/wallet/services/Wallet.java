@@ -18,7 +18,7 @@ public class Wallet {
 
     // singleton
     private Wallet() {
-        this.saldo = new BigDecimal(0.0);
+        this.saldo = new BigDecimal(150.0);
         this.movimientos = new ArrayList<>();
     }
 
