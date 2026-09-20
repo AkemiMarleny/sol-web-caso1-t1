@@ -28,7 +28,7 @@
                         </div>
                         <div class="flex flex-col">
                             <form class="flex flex-col gap-y-3" method="post"
-                                action="${pageContext.request.contextPath}/dashboard">
+                                action="${pageContext.request.contextPath}/wallet">
                                 <div class="flex flex-row gap-x-3">
                                     <div class="flex flex-col gap-y-2 w-full">
                                         <label class="text-xs text-slate-500" for="monto">Monto</label>

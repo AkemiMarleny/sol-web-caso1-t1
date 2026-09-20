@@ -1,13 +1,9 @@
-package com.group8.wallet.services;
+package com.group8.wallet.models;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-import com.group8.wallet.models.Movimiento;
-import com.group8.wallet.models.TipoMovimiento;
 
 public class Wallet {
 
