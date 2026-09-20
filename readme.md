@@ -5,3 +5,4 @@
 - [Akemi Correa](github.com/akemimarleny)
 - [CARLOS MANUEL CASTAÑEDA MENDOZA](https://github.com/SyFranco)
 - [GUILLERMO EVELIO CONIBO MATEO](https://github.com/gconibo)
+- [JOSIMAR JOAO QUIJANDRIA CHAVEZ](https://github.com/Josimar-upn)
